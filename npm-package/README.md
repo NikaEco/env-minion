@@ -3,4 +3,9 @@ The tool aims to help developers synchronize their environmental variable keys. 
 according to the updated .example templates.
 
 ## Use
-Upon installation, provided the root directory of your project is a git repo, git hooks will be added to .git/hooks directory. You are good to go!
+Upon installation, provided the root directory of your project is a git repo, git hooks will be added to .git/hooks directory.
+```
+Successfully made hook file an executable
+Hook file '/path-to-your-directory/.git/hooks/pre-push' successfully populated.
+```
+You are good to go!
