@@ -5,6 +5,7 @@
   "scripts": {
     "postinstall": "node index.js"
   },
+  "keywords": ["environmental variables management", "dotenv"],  
   "main": "index.js",
   "author": "Nisemono <james041200@gmail.com>",
   "license": "MIT",

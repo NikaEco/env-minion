@@ -4,7 +4,7 @@ setup(
     name='env_minion',
     version='0.0.1',
     description='Enforces environmental variable conformance with template shared across team',
-    url='https://github.com/',
+    url='https://github.com/NikaEco/env-minion',
     author='Nisemono',
     include_package_data=True,
     entry_points={
