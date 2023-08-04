@@ -1,6 +1,6 @@
 {
   "name": "env-minion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Enforces environmental variable conformance with template shared across team",
   "scripts": {
     "postinstall": "node index.js"
