@@ -10,6 +10,8 @@ function checkEnv(templatePath, localPath) {
     let isConsistent = true;
 
     for (const tEntry of template.split('\n')) {
+      if (tEntry.startsWith('#') || tEntry.trim().length == 0) continue;
+      
       const key = tEntry.split('=')[0];
       if (key) {
         tKeyset.add(key);
@@ -17,6 +19,8 @@ function checkEnv(templatePath, localPath) {
     }
 
     for (const entry of local.split('\n')) {
+      if (entry.startsWith('#') || entry.trim().length == 0) continue;
+      
       const kvPair = entry.split('=');
       const key = kvPair[0];
       if (kvPair.length < 2) {

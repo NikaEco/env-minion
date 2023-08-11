@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='env_minion',
-    version='0.0.4',
+    version='0.0.5',
     description='Enforces environmental variable conformance with template shared across team',
     long_description=long_description,
     long_description_content_type='text/markdown',
