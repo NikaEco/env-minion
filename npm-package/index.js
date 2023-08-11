@@ -8,7 +8,8 @@ const hookTemplates = {
 };
 
 function createHook(hookType) {
-  const destDirpath = join(process.cwd(), ".git/hooks");
+  console.log(process.cwd());
+  const destDirpath = join(process.cwd(), "../../.git/hooks");
   if (!existsSync(destDirpath)) {
     console.log("Command should be run in the root directory of the git repository");
     return;
@@ -36,6 +37,7 @@ function createHook(hookType) {
 }
 
 function createAllHooks() {
+  console.log("Creating hooks...");
   for (const hookType in hookTemplates) {
     createHook(hookType);
   }
