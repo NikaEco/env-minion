@@ -12,7 +12,7 @@ function checkEnv(templatePath, localPath) {
     for (const tEntry of template.split('\n')) {
       if (tEntry.startsWith('#') || tEntry.trim().length == 0) continue;
       
-      const key = tEntry.split('=')[0];
+      const key = tEntry.split('=')[0].trim();
       if (key) {
         tKeyset.add(key);
       }
@@ -22,7 +22,7 @@ function checkEnv(templatePath, localPath) {
       if (entry.startsWith('#') || entry.trim().length == 0) continue;
       
       const kvPair = entry.split('=');
-      const key = kvPair[0];
+      const key = kvPair[0].trim();
       if (kvPair.length < 2) {
         console.log(`Value missing for the env variable ${key}`);
         isConsistent = false;
